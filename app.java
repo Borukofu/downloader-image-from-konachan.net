@@ -21,14 +21,14 @@ public class app {
                             System.out.println("[ TAG FILE ✅ ] "+args[i+1]);
                             tagFile = file;
                         }else if(file.isDirectory()){
-                            System.out.println("[ TAG FILE ⚠️ ] это дериктория! "+args[i+1]);
+                            System.out.println("[ TAG FILE ⚠️ ] This is the directory! "+args[i+1]);
     
                         }else if(!file.exists()){
-                            System.out.println("[ TAG FILE ⚠️ ] нету такого файла! "+args[i+1]);
+                            System.out.println("[ TAG FILE ⚠️ ] There is no such file! "+args[i+1]);
     
                         }
                     } catch (Exception e) {
-                        System.out.println("[ TAG FILE ⚠️ ] это вообще путь? "+args[i+1]);
+                        System.out.println("[ TAG FILE ⚠️ ] is this even a way? "+args[i+1]);
                         
                     }
                     i++;
@@ -38,7 +38,7 @@ public class app {
                         page = Integer.parseInt(args[i+1]);
                         System.out.println("[ PAGE ✅ ] "+page);   
                     } catch (Exception e) {
-                        System.out.println("[ PAGE ⚠️ ] нету номера страницы, использую поумолчанию "+page);
+                        System.out.println("[ PAGE ⚠️ ] no page number, using default "+page);
                     }
                     i++; 
                     break;
@@ -49,25 +49,25 @@ public class app {
                             System.out.println("[ OUT DIRECTORY ✅ ] "+args[i+1]);
                             outDir = file;
                         }else if(!file.isDirectory()){
-                            System.out.println("[ OUT DIRECTORY ⚠️ ] это не дериктория! "+args[i+1]);
+                            System.out.println("[ OUT DIRECTORY ⚠️ ] This is not a directory! "+args[i+1]);
     
                         }else if(!file.exists()){
-                            System.out.println("[ OUT DIRECTORY ⚠️ ] дериктории нету, пробую создать... "+args[i+1]);
+                            System.out.println("[ OUT DIRECTORY ⚠️ ] there is no directory, I'm trying to create it... "+args[i+1]);
                             boolean yes = file.mkdir();
                             if(yes){
-                                System.out.println("[ OUT DIRECTORY ✅ ] дериктория создана! "+args[i+1]);
+                                System.out.println("[ OUT DIRECTORY ✅ ] directory created! "+args[i+1]);
                                 outDir = file;
                             }else{
-                               System.out.println("[ OUT DIRECTORY ⚠️ ] дериктория не создана! "+args[i+1]);
+                               System.out.println("[ OUT DIRECTORY ⚠️ ] directory not created! "+args[i+1]);
                             }
                         }
                     } catch (Exception e) {
-                        System.out.println("[ OUT DIRECTORY ⚠️ ] это вообще путь? "+args[i]);
+                        System.out.println("[ OUT DIRECTORY ⚠️ ] is this even a way? "+args[i]);
                     }
                     i++;
                     break;
                 default:
-                    System.out.println("[ WARMING ⚠️ ] это аргумент? "+arg);
+                    System.out.println("[ WARMING ⚠️ ] is this an argument? "+arg);
                     break;
             }
         }

@@ -42,7 +42,7 @@ public class image {
                 };
 
 
-                System.out.println("[ ЗАПИСЬ 🖋️ "+(i+1)+"/"+li+"] "+"page-"+page+"-tags-"+tags+(i+1)+".png "+String.format("%.3f",size)+sizeS);
+                System.out.println("[ WRITE 🖋️ "+(i+1)+"/"+li+"] "+"page-"+page+"-tags-"+tags+(i+1)+".png "+String.format("%.3f",size)+sizeS);
 
 
                 byte[] buffer = new byte[4096];
@@ -54,12 +54,12 @@ public class image {
                 outStream.close();
 
 
-                System.out.println("[ УСПЕШНО ✅ ] "+(i+1)+".png");
+                System.out.println("[ SUCCESSFULLY ✅ ] "+(i+1)+".png");
                 downloadedImages++;
                 Thread.sleep(1521);
 
             } catch (Exception e) {
-                System.err.println("[ ОШИБКА ❌ ] файл не смог загрузиться"+link+" ");
+                System.err.println("[ ERROR ❌ ] file failed to load "+link+" ");
                 errorImage++;
                 Thread.currentThread().interrupt();
             }
@@ -75,7 +75,7 @@ public class image {
             resultString = "Gb";
         }
 
-        System.out.println("[ СТАТИСТИКА ] суммарный размер фото:"+String.format("%.3f",resultSize)+resultString+" картинок загружено:"+downloadedImages+" картинок не загружено:"+errorImage);
+        System.out.println("[ STATISTICS ] total photo size:"+String.format("%.3f",resultSize)+resultString+" pictures uploaded:"+downloadedImages+" no images uploaded:"+errorImage);
 
     }
 }

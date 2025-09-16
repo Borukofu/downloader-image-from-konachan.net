@@ -11,7 +11,7 @@ public class search {
     public static String[] links(String urlString){
         try {
 
-            System.out.println("[ ЗАРГУЗКА 💾 ] загрузка сайта по этому url -> "+urlString);
+            System.out.println("[ LOADING 💾 ] loading site at this url -> "+urlString);
             
             @SuppressWarnings("deprecation")
             URL url = new URL(urlString);
@@ -29,7 +29,7 @@ public class search {
 
             reader.close();
 
-            System.out.println("[ ЗАГРУЖЕНО ✅ ] сайт успешно загружен url -> "+urlString);
+            System.out.println("[ LOADED ✅ ] The site has been loaded successfully url "+urlString);
 
 
             String html = content.toString();
