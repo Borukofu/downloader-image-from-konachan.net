@@ -27,7 +27,7 @@ public class image {
                 InputStream inStream = conn.getInputStream(); 
                 
 
-                String pathFile = directory+"/"+"page-"+page+"-tags-"+tags+i+".png";
+                String pathFile = directory+"/"+"page-"+page+"-tags-"+tags+(i+1)+".png";
                 FileOutputStream outStream = new FileOutputStream(pathFile);
 
 

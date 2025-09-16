@@ -48,9 +48,6 @@ public class app {
                         if(file.isDirectory()&&file.exists()){
                             System.out.println("[ OUT DIRECTORY ✅ ] "+args[i+1]);
                             outDir = file;
-                        }else if(!file.isDirectory()){
-                            System.out.println("[ OUT DIRECTORY ⚠️ ] This is not a directory! "+args[i+1]);
-    
                         }else if(!file.exists()){
                             System.out.println("[ OUT DIRECTORY ⚠️ ] there is no directory, I'm trying to create it... "+args[i+1]);
                             boolean yes = file.mkdir();
@@ -60,6 +57,9 @@ public class app {
                             }else{
                                System.out.println("[ OUT DIRECTORY ⚠️ ] directory not created! "+args[i+1]);
                             }
+                        }else if(!file.isDirectory()){
+                            System.out.println("[ OUT DIRECTORY ⚠️ ] This is not a directory! "+args[i+1]);
+    
                         }
                     } catch (Exception e) {
                         System.out.println("[ OUT DIRECTORY ⚠️ ] is this even a way? "+args[i]);
