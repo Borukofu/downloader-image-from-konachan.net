@@ -34,4 +34,4 @@ ___
 
 ## Source Code
 
-The project source code is available in the src branch on GitHub: [branch](https://github.com/Borukofu/downloader-image-from-konachan.net/tree/src)
+The project source code is available in the `src` branch on GitHub: [branch](https://github.com/Borukofu/downloader-image-from-konachan.net/tree/src)
