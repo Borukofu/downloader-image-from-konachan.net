@@ -8,12 +8,40 @@ ___
 
 ## Использование
 
-> Для запуска приложения требуется установленная Java!
+> **Для использование приложения требуется установленная `Java`!**
 
-***Запуск:***
+***Загрузка:***
+Загрузить последнию версию java скрипта в [релизах](https://github.com/Borukofu/downloader-image-from-konachan.net/releases) на github
+
+***Использование:***
 
 ```bash
 java -jar app.jar -o ./images -tf ./tags.txt -p 0
+```
+
+___
+
+## Ручная сборка и использование
+
+> **Для сборки и использование приложения требуется установленная `Java-jdk` и `git`!**
+
+***Загрузка:***
+
+```bash
+git clone https://github.com/Borukofu/downloader-image-from-konachan.net
+git switch src
+```
+
+***Компиляция:***
+
+```bash
+javac app.java
+```
+
+***Использование:***
+
+```bash
+java app -o ./images -tf ./tags.txt -p 0
 ```
 
 ### Параметры командной строки

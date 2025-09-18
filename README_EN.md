@@ -8,12 +8,40 @@ ___
 
 ## Usage
 
-> Java is required to run this application!
+> **Java required to use the application!**
 
-***Execution:***
+***Download:***
+Download the latest version of the Java script in [releases](https://github.com/Borukofu/downloader-image-from-konachan.net/releases) on Github
+
+***Usage:***
 
 ```bash
 java -jar app.jar -o ./images -tf ./tags.txt -p 0
+```
+
+___
+
+## Manual assembly and use
+
+> **To build and use the application, you need to have `Java-jdk` and `git` installed!**J
+
+***Loading:***
+
+```bash
+git clone https://github.com/Borukofu/downloader-image-from-konachan.net
+git switch src
+```
+
+***Compilation:***
+
+```bash
+javac app.java
+```
+
+***Usage:***
+
+```bash
+java app -o ./images -tf ./tags.txt -p 0
 ```
 
 ### Command Line Parameters
