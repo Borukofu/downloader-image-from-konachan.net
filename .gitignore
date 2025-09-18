@@ -1,6 +1,7 @@
 # Compiled class file
 *.class
 images/
+bin/
 # Log file
 *.log
 
