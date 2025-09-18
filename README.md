@@ -4,7 +4,9 @@
 
 ___
 
-## README
+## Read
 
-* [EN](./README_EN.md)
-* [RU](./README_RU.md)
+available in different languages
+
+* [English](./README_EN.md)
+* [Russian](./README_RU.md)
