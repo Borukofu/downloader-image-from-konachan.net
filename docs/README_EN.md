@@ -35,13 +35,16 @@ git switch src
 ***Compilation:***
 
 ```bash
-javac app.java
+cd src
+javac -d ../bin app.java
+cd ..
+jar -cmf manifest.mf <File name>.jar -C bin .
 ```
 
 ***Usage:***
 
 ```bash
-java app -o ./images -tf ./tags.txt -p 0
+java -jar <File name>.jar -o ./images -tf ./tags.txt -p 0
 ```
 
 ### Command Line Parameters

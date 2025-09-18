@@ -29,19 +29,22 @@ ___
 
 ```bash
 git clone https://github.com/Borukofu/downloader-image-from-konachan.net
-git switch src
+cd downloader-image-from-konachan.net
 ```
 
 ***Компиляция:***
 
 ```bash
-javac app.java
+cd src
+javac -d ../bin app.java
+cd ..
+jar -cmf manifest.mf <Название файла>.jar -C bin .
 ```
 
 ***Использование:***
 
 ```bash
-java app -o ./images -tf ./tags.txt -p 0
+java -jar <Название файла>.jar -o ./images -tf ./tags.txt -p 0
 ```
 
 ### Параметры командной строки
